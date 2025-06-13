@@ -69,6 +69,8 @@ const ProductoPage = () => {
         if (data.type === 'success') {
             alert(data.message);
             onResetForm();
+            console.log('--upd');
+            
         setErrores([]);
             setError({
                 nombre: '',
