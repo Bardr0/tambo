@@ -1,25 +1,25 @@
-import React, { createContext } from 'react'
+import React, { createContext, useContext, useState } from 'react'
 
 const AuthContext = createContext();
 
-export const AutoProvider = ({children}) => {
-const [contador, setContador] = useState(0);
+export const AuthProvider = ({ children }) => {
+    const [contador, setContador] = useState(0);
 
-//login
+    //login
 
-//longout
+    //longout
 
-//verificarlogin 
+    //verificarlogin 
 
-//info
+    //info
 
-const incrementar = () => {
-    setContador(contador => contador + 1)
-}
-const decrementar = () => {
-    setContador(contador => contador - 1)
-}
- const reiniciar = () => {
+    const incrementar = () => {
+        setContador(contador => contador + 1)
+    }
+    const decrementar = () => {
+        setContador(contador => contador - 1)
+    }
+    const reiniciar = () => {
         setContador(0);
     }
 
